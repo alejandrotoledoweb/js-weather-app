@@ -15,13 +15,13 @@ const img = document.querySelector(".weatherImage")
 async function getWeather(location) {
   const response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=' + location + '&units=metric&appid=d3038b3303b62168dd448fbeb4531d41', {mode: 'cors'})
   const data = await response.json();
-  const a = data.name;
-  const b = data.main.temp;
-  const c = data.main.feels_like;
-  const d = data.weather[0].description;
-  const e = data.main.humidity;
-  const f = data.main.temp_max;
-  buildPage(a, b, c, d, e, f);
+  const name = data.name;
+  const temperature = data.main.temp;
+  const image = data.main.feels_like;
+  const desc = data.weather[0].description;
+  const hum = data.main.humidity;
+  const maxTemp = data.main.temp_max;
+  buildPage(name, temperature, image, desc, hum, maxTemp);
   getSticker(d);
 }
 
@@ -32,14 +32,14 @@ async function toggleFarenheight() {
   let unit = checkState();
   const response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=' + location + '&units='+ unit + '&appid=d3038b3303b62168dd448fbeb4531d41', {mode: 'cors'})
   const data = await response.json();
-  const a = data.name;
-  const b = data.main.temp;
-  const c = data.main.feels_like;
-  const d = data.weather[0].description;
-  const e = data.main.humidity;
-  const f = data.main.temp_max;
-  getSticker(d);
-  buildPage(a, b, c, d, e, f);
+  const name = data.name;
+  const temperature = data.main.temp;
+  const image = data.main.feels_like;
+  const desc = data.weather[0].description;
+  const hum = data.main.humidity;
+  const maxTemp = data.main.temp_max;
+  getSticker(image);
+  buildPage(name, temperature, image, desc, hum, maxTemp);
   changeDef();
 };
 
