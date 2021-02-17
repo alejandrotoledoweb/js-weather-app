@@ -66,3 +66,12 @@ const checkState = () => {
     return x;
   };
 };
+
+// Toggle Degree
+const changeDef = () => {
+  if(slider.checked === true){
+    deg.textContent = "°F"
+  } else if (slider.checked === false){
+    deg.textContent = "°C"
+  }
+};
