@@ -18,7 +18,7 @@ git
 
 ## Live Demo
 
-[Live Demo Link](https://alejandrotoledoweb.github.io/js-weather-app/)
+[Live Demo Link](https://rawcdn.githack.com/alejandrotoledoweb/js-weather-app/e89f238095106b65d8da4219d298ec2a83ef2384/dist/index.html)
 
 ## Getting Started
 
