@@ -56,7 +56,7 @@ const buildPage = (place, t, feels, desc, humid, m) => {
 };
 
 
-// Check Slider for temperature units
+// Checkbox for temperature units
 const checkState = () => {
   if (slider.checked === true){
     x = "imperial"
