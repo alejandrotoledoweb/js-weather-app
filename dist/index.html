@@ -1,11 +1,54 @@
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Weather-app-JS</title>
-    <script src="https://unpkg.com/lodash@4.17.20"></script>
-  </head>
-  <body>
-    <script src="main.js"></script>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Domine:wght@500&family=Roboto&display=swap" rel="stylesheet">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+  <h1 class="justify-content-center d-flex mt-4 mb-4">Weather app JS</h1>
+  <div class="search mt-3 ml-3 mb-5 container">
+    <h3>Search by City</h3>
+    <span class="add">🔍</span>
+    <input class="searchBar" type="text" value="Search City...">
+  </div>
+  <div class="container border w-50">
+    <div class="weatherInfo">
+      <div class="cardTop">
+        <span class="weatherCondition"></span>
+        <h1 class="city"></h1>
+      </div>
+      <div class="cardLeft rounded border">
+        <span class="temp"></span>
+        <span class="deg">°C</span>
+        <div class="cardRight">
+          <span class="feelsLike"></span>
+          <span class="tempMax"></span>
+          <span class="humidty"></span></span>
+        </div>
+      </div>
+
+      <div class="toggle">
+        <label class="switch">
+          <input class="toggleF" type="checkbox">
+          <span class="slider"> Temperature in Farenheit</span>
+        </label>
+
+      </div>
+
+
+    </div>
+    <div class="gify">
+        <img class="weatherImage"src="#" />
+    </div>
+  </div>
+  <script src="main.js"></script>
+  
+</body>
 </html>
