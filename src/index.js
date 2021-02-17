@@ -1,4 +1,4 @@
-// Dom Elements
+// Dom Create Elements
 
 const cityName = document.querySelector(".city");
 const weatherCondition = document.querySelector(".weatherCondition");
