@@ -1,0 +1,32 @@
+{
+  "name": "js-weather-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alejandrotoledoweb/js-weather-app.git"
+  },
+  "keywords": [],
+  "author": "Alejandro Toledo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alejandrotoledoweb/js-weather-app/issues"
+  },
+  "homepage": "https://github.com/alejandrotoledoweb/js-weather-app#readme",
+  "dependencies": {
+    "lodash": "^4.17.20"
+  },
+  "devDependencies": {
+    "css-loader": "^5.0.2",
+    "csv-loader": "^3.0.3",
+    "style-loader": "^2.0.0",
+    "webpack-cli": "^4.5.0",
+    "xml-loader": "^1.2.1"
+  }
+}
