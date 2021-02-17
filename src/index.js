@@ -25,7 +25,7 @@ async function getWeather(location) {
   getSticker(d);
 }
 
-getWeather("Toronto");
+getWeather("Quito");
 
 async function toggleFarenheight() {
   let location = cityName.textContent
@@ -67,7 +67,7 @@ const checkState = () => {
   };
 };
 
-// Toggle Degree
+// Toggle to change Degree units
 const changeDef = () => {
   if(slider.checked === true){
     deg.textContent = "°F"
@@ -75,3 +75,37 @@ const changeDef = () => {
     deg.textContent = "°C"
   }
 };
+
+// Add gifs
+async function getSticker (search) {
+  try {
+    const response = await fetch("https://api.giphy.com/v1/stickers/translate?api_key=qitI9CMnXX08n6UFhJJoChiA9ZKbAl53&s=" + search, {mode: "cors"})
+    const sticker = await response.json();
+    img.src = sticker.data.images.fixed_height.url;
+  } catch (error){
+    console.log(error);
+  }
+};
+
+
+// Event Listeners
+
+submit.addEventListener("click", () => {
+  getWeather(input.value)
+});
+
+input.addEventListener("keyup", (e) => {
+  if (e.keyCode === 13) {
+    e.preventDefault();
+    submit.click();
+  }
+});
+
+input.addEventListener("click", () => {
+  input.value = ""
+});
+
+slider.addEventListener("click", () => {
+  toggleFarenheight();
+
+})
