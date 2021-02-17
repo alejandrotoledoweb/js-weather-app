@@ -76,7 +76,7 @@ const changeDef = () => {
   }
 };
 
-// Add gifs
+// Add image gifs
 async function getSticker (search) {
   try {
     const response = await fetch("https://api.giphy.com/v1/stickers/translate?api_key=qitI9CMnXX08n6UFhJJoChiA9ZKbAl53&s=" + search, {mode: "cors"})
