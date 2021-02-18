@@ -8,8 +8,7 @@ This project was build to test my abilities of the lessons about:
 - Working with JSON files
 - Await and Async functions 
 
-git
-![screenshot](./Screenshot-w-app.png)
+![screenshot](./Screenshot-2.png)
 
 ## Built With
 
