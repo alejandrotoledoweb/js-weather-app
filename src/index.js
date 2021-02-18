@@ -26,7 +26,7 @@ const buildPage = (place, t, feels, desc, humid, m) => {
 
 
 // Add image gifs
-async function getSticker(search) {
+const getSticker = async (search) => {
   try {
     const response = await fetch(`https://api.giphy.com/v1/stickers/translate?api_key=qitI9CMnXX08n6UFhJJoChiA9ZKbAl53&s=${search}`, { mode: 'cors' });
     const sticker = await response.json();
@@ -36,7 +36,7 @@ async function getSticker(search) {
   }
 }
 
-async function getWeather(location) {
+const getWeather = async (location) => {
   const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=d3038b3303b62168dd448fbeb4531d41`, { mode: 'cors' });
   const data = await response.json();
   const { name } = data;
@@ -71,7 +71,7 @@ const changeDef = async () => {
 
 getWeather('Quito');
 
-async function toggleFarenheight() {
+const toggleFarenheight = async () => {
   const location = cityName.textContent;
   const unit = checkState();
   const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&units=${unit}&appid=d3038b3303b62168dd448fbeb4531d41`, { mode: 'cors' });
