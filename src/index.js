@@ -34,7 +34,7 @@ const getSticker = async (search) => {
   } catch (error) {
     console.log(error);
   }
-}
+};
 
 const getWeather = async (location) => {
   const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=d3038b3303b62168dd448fbeb4531d41`, { mode: 'cors' });
@@ -47,7 +47,7 @@ const getWeather = async (location) => {
   const maxTemp = data.main.temp_max;
   buildPage(name, temperature, image, desc, hum, maxTemp);
   getSticker(image);
-}
+};
 
 // Checkbox for temperature units
 const checkState = (x) => {
@@ -85,7 +85,7 @@ const toggleFarenheight = async () => {
   getSticker(image);
   buildPage(name, temperature, image, desc, hum, maxTemp);
   changeDef();
-}
+};
 
 // Event Listeners
 
