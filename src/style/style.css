@@ -1,7 +1,10 @@
 h1 {
   font-size: 4rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: blue;
+  color: rgb(114, 114, 236);
+  background-color: rgb(218, 191, 243);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .switch {
