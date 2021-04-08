@@ -37,7 +37,7 @@ const getSticker = async (search) => {
 };
 
 const getWeather = async (location) => {
-  const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=d3038b3303b62168dd448fbeb4531d41`, { mode: 'cors' });
+  const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=152cc205914892c50d14a4f1206b5222`, { mode: 'cors' });
   const data = await response.json();
   const { name } = data;
   const temperature = data.main.temp;
